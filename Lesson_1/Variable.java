@@ -7,7 +7,7 @@ public class Variable {
         int hdd = 128;
         long serialNumber = 23476986;
         float cpuFrequence = 2.3f;
-        double versionOs = 15.326;
+        double OSversion = 15.326;
         char disk = 'C';
         boolean macbook = true;
 
@@ -16,7 +16,7 @@ public class Variable {
         System.out.println (hdd);
         System.out.println (serialNumber);
         System.out.println (cpuFrequence);
-        System.out.println (versionOs);
+        System.out.println (OSversion);
         System.out.println (disk);
         System.out.println (macbook);
 
