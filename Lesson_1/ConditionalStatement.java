@@ -27,8 +27,8 @@ public class ConditionalStatement {
             System.out.println("Maria");
         } else if(firstLatterName == 'I') {
             System.out.println("Igor");
-        } else{
+        } else {
             System.out.println("not found");
-            }
         }
     }
+}

@@ -17,10 +17,10 @@ public class Cycle {
         do {
             if(j % 2 == 1) {
                 sum = sum + j;
-                sum +=j;
+                sum += j;
             }
             j++;
         } while(j < 20);
-            System.out.println(sum);
+        System.out.println(sum);
     }
 }
