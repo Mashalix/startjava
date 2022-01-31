@@ -1,7 +1,6 @@
 public class Variable {
 
     public static void main(String[] args) {
-
         byte memory = 8;
         short display = 13;
         int hdd = 128;
