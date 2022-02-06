@@ -6,18 +6,18 @@ public class CalculatorTest {
         Calculator calc = new Calculator();
         Scanner sc = new Scanner(System.in);
 
-            System.out.println("Введите первое число");
-            calc.setFirstNumber(sc.nextInt());
+                System.out.println("Введите первое число");
+                calc.setFirstNumber(sc.nextInt());
 
-            System.out.println("Введите знак математической операции");
-            calc.setSign(sc.next().charAt(0));
+                System.out.println("Введите знак математической операции");
+                calc.setSign(sc.next().charAt(0));
 
-            System.out.println("Введите второе число");
-            calc.setSecondNumber(sc.nextInt());
+                System.out.println("Введите второе число");
+                calc.setSecondNumber(sc.nextInt());
 
-            System.out.println(calc.calculate());
-            String answer;
-            do {
+                System.out.println(calc.calculate());
+                String answer;
+                do {
             calc.calculate();
             do {
                 System.out.println("Хотите продолжить, yes/no?");

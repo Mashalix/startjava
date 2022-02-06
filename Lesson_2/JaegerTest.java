@@ -7,7 +7,7 @@ public class JaegerTest {
         System.out.println(gipsyAvenger);
         System.out.println(gipsyDanger);
        
-       gipsyDanger.drift();
-       gipsyAvenger.move();
+        gipsyDanger.drift();
+        gipsyAvenger.move();
     }
 }

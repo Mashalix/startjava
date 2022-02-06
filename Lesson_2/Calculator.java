@@ -2,7 +2,6 @@ public class Calculator {
     private char sign = '*';
     private int firstNumber;
     private int secondNumber;
-    private int result;
 
     public void setFirstNumber(int firstNumber) {
         this.firstNumber = firstNumber;
@@ -15,12 +14,14 @@ public class Calculator {
     public void setSign(char sign) {
         this.sign = sign;
     }
+    private int result;
 
     public int calculate() {
+
         switch (sign) {
             case '+':
                 result = firstNumber + secondNumber;
-                break;
+            break;
             case '-':
                 result = firstNumber - secondNumber;
                 break;
@@ -34,11 +35,9 @@ public class Calculator {
                 result = firstNumber % secondNumber;
                 break;
             case '^':
-                int a = 1;
                 for(int i = 0; i < secondNumber; i++) {
-                    a *= firstNumber;
                 }
-                result = a;
+                result = 1;
                 break;
             default:
                 System.out.println("Неверно указан тип операции");
