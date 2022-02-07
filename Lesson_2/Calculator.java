@@ -14,35 +14,33 @@ public class Calculator {
     public void setSign(char sign) {
         this.sign = sign;
     }
-    private int result;
 
-    public int calculate() {
-
+    public void calculate() {
         switch (sign) {
             case '+':
-                result = firstNumber + secondNumber;
-            break;
+                System.out.println(firstNumber + secondNumber);
+                break;
             case '-':
-                result = firstNumber - secondNumber;
+                System.out.println(firstNumber - secondNumber);
                 break;
             case '*':
-                result = firstNumber * secondNumber;
+                System.out.println(firstNumber * secondNumber);
                 break;
             case '/':
-                result = firstNumber / secondNumber;
+                System.out.println(firstNumber / secondNumber);
                 break;
             case '%':
-                result = firstNumber % secondNumber;
+                System.out.println(firstNumber % secondNumber);
                 break;
             case '^':
+                int result = 1;
                 for(int i = 0; i < secondNumber; i++) {
+                    result = result * firstNumber;
                 }
-                result = 1;
+                System.out.println(result);
                 break;
             default:
                 System.out.println("Неверно указан тип операции");
-                break;
         }
-        return result;
     }
 }
